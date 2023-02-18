@@ -1,0 +1,50 @@
+﻿<Window x:Class="TestFilterDuctPipeWithSQL.ViewMainApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestFilterDuctPipeWithSQL"
+             mc:Ignorable="d" MinWidth="945" MinHeight="800"
+        FontSize="22" Width="890" Loaded="Window_Loaded"  >
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button Width="150" Padding="10" Margin="10" Content="Import" Click="Button_Load"/>
+            <Button Width="150" Padding="10" Margin="10" Content="Update" Click="Button_Update"/>
+            <Button Width="150" Padding="10" Margin="10" Content="Delete" Click="Button_Delete"/>
+
+        </StackPanel>
+        <Grid Margin="15">
+            <GroupBox  Header="Test SQL">
+
+                <TabControl Margin="5">
+
+                    <TabItem Padding="10"  Header="Duct">
+                        <DataGrid x:Name="dataDuct" ItemsSource="{Binding}"/>
+                    </TabItem>
+                    
+                    <TabItem Padding="10" Header="Pipe">
+                        <DataGrid x:Name="dataPipe" ItemsSource="{Binding}"/>
+                    </TabItem>
+
+                    <TabItem Padding="10" Header="Duct Fittings">
+                        <DataGrid x:Name="dataDuctFitting" ItemsSource="{Binding}"/>
+                    </TabItem>
+                    
+                    <TabItem Padding="10" Header="Pipe Fittings">
+                        <DataGrid x:Name="dataPipeFitting" ItemsSource="{Binding}"/>
+                    </TabItem>
+                    
+                    <TabItem Padding="10" Header="Pipe Accessories">
+                        <DataGrid x:Name="dataPipeAcc" ItemsSource="{Binding}"/>
+                    </TabItem>
+
+
+                </TabControl>
+
+            </GroupBox>
+
+
+
+        </Grid>
+    </DockPanel>
+</Window>

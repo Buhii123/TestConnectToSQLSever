@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>C:\ProgramData\Autodesk\Revit\Addins\2023\TestSQL\TestFilterDuctPipeWithSQL.dll</Assembly>
+		<ClientId>3306C4B4-3B13-4D78-A259-6146AF7DE054</ClientId>
+		<FullClassName>TestFilterDuctPipeWithSQL.CommandDuctPipe</FullClassName>
+		<Text>Sql Test</Text>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<LanguageType>Unknown</LanguageType>
+		<VendorId>ADSK</VendorId>
+	</AddIn>
+</RevitAddIns>
